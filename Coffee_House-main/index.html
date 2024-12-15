@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>CoffeeHouse</title>
+  </head>
+
+
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container pt-1">
+          <i class="fa-solid fa-mug-saucer mr-4">RibayCoffeeHouse</i> <!-- Icone -->
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <i class="fa-solid fa-bars"></i>
+              </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menu_nav">
+              <ul class="navbar-nav mx-auto justify-content-around">
+                <li class="nav-item active">
+                  <a href="#home" class="nav-link">start</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#promo" class="nav-link">Promotion</a>
+                </li> 
+                <li class="nav-item">
+                  <a href="#cardapio" class="nav-link">Menu</a>
+                </li> 
+                <li class="nav-item">
+                  <a href="#avaliacao" class="nav-link">Reviews</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <button type="button" class="btn btn-nav">Delivery</button>
+                    </a>
+                </li>           
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <section id="home">
+      <div class="shape d-none d-md-block"></div> 
+      
+      <div class="container pt-4 home">
+          <div class="row align-items-center mt-4">
+              <div class="col-md-6 d-flex flex-column align-items-center">
+                  <h1 class="display-4"> <span>RibayCoffee</span>House</h1>
+                  <p class="text-center mt-3">Today is the day you love new coffee combinations. Experience our special menu!</p>
+                  <div class="d-flex gap-2 mt-4">
+                      <a href="#cardapio">
+                          <button type="button" class="btn btn-home">Menu</button>
+                      </a>
+                      <button type="button" class="btn btn-tel">
+                          <i class="fa-solid fa-phone"></i>(63) 99999-9999
+                      </button>
+                  </div>
+              </div>
+  
+              <div class="col-md-6">
+                  <img class="img-fluid d-none d-md-block" src="imagens/cafe.png">
+              </div>
+          </div>   
+      </div>
+  </section>
+  
+    <div id="separa">
+    </div>
+
+    <section id="promo">
+      <div class="container">
+        <div class="row align-items-center mt-4">
+          <div class="col-12 mb-4 d-flex text-center">
+            <h3> <span></span>Check out CoffeeHouse! Come try our themed coffees and take advantage of our end-of-year <span>Promotions</span></h3>
+          </div>
+
+          <div class="col-md-6 promo">
+            <img class="img-fluid d-none d-md-block" src="imagens/shape.png">
+          </div>
+
+          
+          <div class="col-md-6 promo">
+            <div class="card text-center">
+              <div class="card-header">
+                Promotion
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">Everyone deserves an extra dose of joy in this Natal! Experience our Panetone Coffee or Mocha Natalino with a 15% discount. 🎁</p>
+                <a href="#" class="btn btn-promo">To enjoy</a>
+              </div>
+              <div class="card-footer">
+                December 28th
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="cardapio">
+      <div class="container">
+        <div class="row align-items-center mt-4">
+          <div class="col-12">
+            <h2 class="text-center mb-4 display-4">Menu</h2>
+          </div>
+    
+          
+          <template id="card-template">
+            <div class="col-md-6">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="" class="img-fluid rounded-start" alt="">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text descricao"></p>
+                      <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </template>
+    
+          
+          <div id="cards-container" class="row"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="avaliacao">
+      <div class="container">
+        <div class="row align-items-center mt-4">
+
+          <div class="col-lg-4">
+              <img src="imagens/chef.png" class="img-fluid chef">
+          </div>
+
+          <div class="col-lg-8">
+            <h3 class="">Reviews	</h3>
+            <h2> What customers say </h2>
+
+            <div id="avaliado" class="mb-4 mt-4 user1">
+
+              <img src="imagens/user.png" class="img-fluid">
+
+              <div class="tamanho">
+                <div class="d-flex espaco">
+                  <h4>Penaflor</h4>
+                  <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div> 
+                </div>
+                
+                <p>Great coffees, with super affordable prices, dahil ang sarap mo rebay eto 5 star </p>
+                <p class="card-text"><small class="text-muted">09/12/24</small></p> 
+              </div>
+              
+            </div>
+
+            <div id="avaliado" class="user2">
+
+              <img src="imagens/user.png" class="img-fluid">
+
+              <div class="tamanho">
+                <div class="d-flex espaco">
+                  <h4>Sales</h4>
+                  <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div> 
+                </div>
+                
+                <p>I went and tried the Mocha Natalino, it was delicious! super sarap ni rebay!!</p> 
+                <p class="card-text"><small class="text-muted">28/11/24</small></p>
+              </div>
+              
+            </div>
+
+            <div id="avaliado" class="mb-4 mt-4 user3">
+
+              <img src="imagens/user.png" class="img-fluid">
+
+              <div class="tamanho">
+                <div class="d-flex espaco">
+                  <h4>Ron </h4>
+                  <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div> 
+                </div>
+                
+                <p>Comfortable place and quality service!</p> 
+                <p class="card-text"><small class="text-muted">02/11/24</small></p>
+              </div>
+              
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer id="rodape">
+      <img src="imagens/wave.svg" >
+      <div class="container">
+        <div class="row">
+          <i class="fa-solid fa-mug-saucer col-12 text-center icone-cafe">RibayCoffeeHouse</i>
+
+          <hr class="linha">
+          <div class="col-12 text-center redes">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+
+          <hr class="linha">
+
+          <div class="col-md-4 mb-2">
+            <h5>Contact us</h5>
+            <p>contact</p>
+            <p>frequently asked questions</p>
+
+          </div>
+          <div class="col-md-4 mb-2 ">
+            <h5>On</h5>
+            <p>Who we are</p>
+            <p>Mission and vison</p>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Help</h5>
+            <p>Policies</p>
+            <p>Support</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
+
